@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,
+                   maximum-scale=1.0, user-scalable=no">
+
+    <title>PS4 13.52 Host</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="app">
+
+        <header class="hero">
+            <div>
+                <span class="eyebrow">PS4 WEB HOST</span>
+                <h1>13.52 Host</h1>
+                <p class="subtitle">
+                    Firmware tools and payload integration interface
+                </p>
+            </div>
+
+            <div id="firmwareBadge" class="badge">
+                Detecting…
+            </div>
+        </header>
+
+        <section class="status-card">
+            <div class="status-icon" id="statusIcon">●</div>
+
+            <div class="status-content">
+                <span class="label">SYSTEM STATUS</span>
+                <strong id="statusText">Ready</strong>
+                <small id="statusDetail">
+                    Waiting for an action
+                </small>
+            </div>
+        </section>
+
+        <section class="grid">
+
+            <button class="action-card primary" id="spoofButton">
+                <span class="card-icon">⚡</span>
+                <span class="card-title">HW Spoof</span>
+                <span class="card-description">
+                    Start configured integration
+                </span>
+            </button>
+
+            <button class="action-card" id="payloadButton">
+                <span class="card-icon">▶</span>
+                <span class="card-title">Load Payload</span>
+                <span class="card-description">
+                    Payload integration endpoint
+                </span>
+            </button>
+
+            <button class="action-card" id="checkButton">
+                <span class="card-icon">✓</span>
+                <span class="card-title">Check Firmware</span>
+                <span class="card-description">
+                    Inspect browser firmware information
+                </span>
+            </button>
+
+            <button class="action-card" id="clearButton">
+                <span class="card-icon">×</span>
+                <span class="card-title">Clear Log</span>
+                <span class="card-description">
+                    Clear the console output
+                </span>
+            </button>
+
+        </section>
+
+        <section class="panel">
+            <div class="panel-header">
+                <div>
+                    <span class="label">CONFIGURATION</span>
+                    <h2>Firmware Profile</h2>
+                </div>
+
+                <span class="profile-badge">
+                    <span id="profileFirmware">13.52</span>
+                </span>
+            </div>
+
+            <div class="config-grid">
+                <div class="config-item">
+                    <span>Firmware</span>
+                    <strong id="configFirmware">13.52</strong>
+                </div>
+
+                <div class="config-item">
+                    <span>Offsets</span>
+                    <strong id="offsetCount">0</strong>
+                </div>
+
+                <div class="config-item">
+                    <span>Profile</span>
+                    <strong id="profileName">PS4 13.52</strong>
+                </div>
+
+                <div class="config-item">
+                    <span>Mode</span>
+                    <strong>Integration</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-header">
+                <div>
+                    <span class="label">CONSOLE</span>
+                    <h2>System Log</h2>
+                </div>
+
+                <button class="mini-button" id="copyLog">
+                    Copy
+                </button>
+            </div>
+
+            <pre id="console" class="console">PS4 13.52 Host
+Initializing…
+</pre>
+        </section>
+
+        <footer>
+            <span>PS4 13.52 Host</span>
+            <span>Local browser interface</span>
+        </footer>
+
+    </main>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
